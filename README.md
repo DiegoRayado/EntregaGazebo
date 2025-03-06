@@ -12,13 +12,14 @@ Tal y como se meciona en el guión se genera un laberinto de tamaño 10x12 (Seg�
 Se posicion el robot pionner en el inicio (10.5,8.5). Por lo que se determina que el punto final se encuentra en la coordenada (1.5,1.5) ya que es la esquina opuesta. Se edita el suelo para añadirle un color azul mas vistoso.
 
 ## Pioneer <a name="Pioneer"></a>
-### Video
-[Enlace](https://youtu.be/kf7UdsoY8r0)
 
 ### Cambios en el modelo 
+
 -Se le añade un sensor, se utiliza el codigo propocionado, pero se cambia el angulo de vision y el alcance del mismo.  
 ![Captura](images/sensor_add.png)
+
 -Se le añade el gps, se utiliza con el fin de indicar al robot cunado ha llegado a meta y poder detenerse e imprimirlo por pantalla. 
+
 ![Captura](images/gps_add.png)
 
 
