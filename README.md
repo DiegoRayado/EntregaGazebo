@@ -33,7 +33,7 @@ El controlador usa una logica muy simple, hace avanzar al robot hasta encontrar 
 
 Para lanzar el mundo de Gazebo con el modelo Pioneer, simplemente ejecuta el siguiente script:
 
-$ ./launch.sh
+user@hostname:~/project$ ./launch.sh
 
 Este script realizará dos tareas principales:
 
