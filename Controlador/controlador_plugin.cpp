@@ -41,25 +41,35 @@ namespace gazebo
 
             double currentTime = model->GetWorld()->SimTime().Double();
 
+            ignition::math::Pose3d pose = model->WorldPose();
+            double x = pose.Pos().X();
+            double y = pose.Pos().Y();
+
+            if (x >= 1.0 && x <= 2.0 && y >= 1.0 && y <= 2.0)
+            {
+            SetWheelVelocities(0.0, 0.0);  // Stop the robot
+            printf("He llegado a la meta: %f %f\n", x, y);
+            return;
+            }
+
             if (isRotating)
             {
-                if (currentTime - rotationStartTime >= rotationDuration)
-                {
-                    isRotating = false;
-                    SetWheelVelocities(1.0, 1.0);
-                }
-                else
-                {
-                    SetWheelVelocities(-1.0, 1.0);  // Rotate in place
-                }
+            if (currentTime - rotationStartTime >= rotationDuration)
+            {
+                isRotating = false;
+                SetWheelVelocities(1.0, 1.0);
             }
             else
             {
-                UpdateMovement();
+                SetWheelVelocities(-1.0, 1.0);  // Rotate in place
+            }
+            }
+            else
+            {
+            UpdateMovement();
             }
 
-            ignition::math::Pose3d pose = model->WorldPose();
-            printf("At: %f %f %f\n", pose.Pos().X(), pose.Pos().Y(), pose.Pos().Z());
+            printf("At: %f %f %f\n", x, y, pose.Pos().Z());
         }
 
     private:
