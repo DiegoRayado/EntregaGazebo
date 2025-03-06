@@ -31,7 +31,9 @@ El controlador usa una logica muy simple, hace avanzar al robot hasta encontrar 
 
 ## Lanzar el programa <a name="i4"></a>
 Antes de todo en la carpeta buiild ejecutar:
-<pre><code>cmake .. make </code></pre>
+<pre><code>cmake ..
+make</code></pre>
+
 Para lanzar el mundo de Gazebo con el modelo Pioneer, simplemente ejecuta el siguiente script:
 
 <pre><code>./launch.sh</code></pre>
