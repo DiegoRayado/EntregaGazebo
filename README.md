@@ -1,7 +1,7 @@
 # EntregaGazebo
 ## Tabla de Contenidos
 1. [Introducción](#Introduccion)
-2. [Controlador](#A*)
+2. [Pioneer](#Pioneer)
 3. [SigueParedes con GPS](#Sigueparedes)
 4. [Conclusión](#i4)
 ## Introducción <a name="Introduccion"></a>
@@ -9,17 +9,18 @@ Tal y como se meciona en el guión se genera un laberinto de tamaño 10x12 (Seg�
 
 ![Captura](images/mapa.png)
 
-Se posicion el robot pionner en el inicio (10.5,8.5). Por lo que se determina que el punto final se encuentra en la coordenada (1.5,1.5) ya que es la esquina opuesta. Para resolver este laberinto se ha llevado a cabo 1 controlador básico.
+Se posicion el robot pionner en el inicio (10.5,8.5). Por lo que se determina que el punto final se encuentra en la coordenada (1.5,1.5) ya que es la esquina opuesta. Se edita el suelo para añadirle un color azul mas vistoso.
 
-## Controlador* <a name="A*"></a>
+## Pioneer <a name="Pioneer"></a>
 ### Video
 [Enlace](https://youtu.be/kf7UdsoY8r0)
 
-### Características Principales
-- Implementación del algoritmo A* para encontrar el camino óptimo desde el punto inicial hasta la meta.
-- Actualización continua de la posición del robot en base a los valores de los sensores de posición.
-- Uso de los sensores de proximidad.
-- Si el robot encuentra una celda no trasnistable retrocede y recalcula una nueva ruta para alcanzar el objetivo.
+### Cambios en el modelo 
+-Se le añade un sensor, se utiliza el codigo propocionado, pero se cambia el angulo de vision y el alcance del mismo.  
+![Captura](images/sensor_add.png)
+-Se le añade el gps, se utiliza con el fin de indicar al robot cunado ha llegado a meta y poder detenerse e imprimirlo por pantalla. 
+![Captura](images/gps_add.png)
+
 
 ### Componentes del Código
 
