@@ -30,7 +30,7 @@ Se añade un gps, el cual se utiliza con el fin de indicar al robot cunado ha ll
 El controlador usa una logica muy simple, hace avanzar al robot hasta encontrar una pared. Cundo se topa con una pared realiza un giro de 90 grados y sigue avanzando (sino se topa con ninguna pared de nuevo). Finalmente se añade la detencion del robot cuando llega a meta. Como podemos observar es un controlador muy simple que no podria resolver ciertos mapas. Sin embargo, esto podría corregirse añadiendo un componente de aleatoriedad a los grados que gira y la direccion del giro. 
 
 ## Lanzar el programa <a name="i4"></a>
-Antes de todo en 'EntregaGazebo/Controlador/build' ejecutar:
+Antes de todo en `EntregaGazebo/Controlador/build` ejecutar:
 <pre><code>cmake ..
 make</code></pre>
 
