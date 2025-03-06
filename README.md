@@ -46,7 +46,7 @@ Para lanzar el mundo de Gazebo con el modelo Pioneer, simplemente ejecuta el sig
 
 Este script realizará dos tareas principales:
 
-1. Configurará automáticamente el `GAZEBO_MODEL_PATH` mediante el script de Python `set_gazebo_path.py`, que apunta a la carpeta de modelos.
+1. Configurará automáticamente el `GAZEBO_MODEL_PATH` mediante el script de Python `set_gazebo_path.py`, que apunta a la carpeta del modelo (pioneer).
 2. Lanzará Gazebo con el archivo `map.world.xml` (mundo de Gazebo) que se encuentra en la carpeta `mundos`.
 
 Si se quisiera usar otro modelo Pioneer, es necesario modificar el archivo correspondiente para cambiar la variable GAZEBO_MODEL_PATH. Esto puede hacerse editando el script set_gazebo_path.py o exportando manualmente la nueva ruta en la terminal antes de ejecutar el script. Por ejemplo:
