@@ -19,7 +19,7 @@ Se añade un sensor, utilizando el codigo propocionado, pero se cambia el angulo
 
 ![Captura](images/sensor_add.png)
 
-Se añade un gps, el cual se utiliza con el fin de indicar al robot cunado ha llegado a meta para poder detenerse e imprimirlo por pantalla. 
+Se añade también un gps. Aunque para conocer la posción del robot se usa: `ignition::math::Pose3d pose = model->WorldPose();`  
 
 ![Captura](images/gps_add.png)
 
