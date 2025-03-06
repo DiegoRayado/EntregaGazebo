@@ -47,5 +47,8 @@ Si se quisiera usar otro modelo Pioneer, es necesario modificar el archivo corre
 <pre><code>export GAZEBO_MODEL_PATH=/ruta/a/tu/modelo:$GAZEBO_MODEL_PATH</code></pre>
 
 Esto permitirá que Gazebo cargue el modelo deseado desde la nueva ubicación especificada. Asegúrate de que los archivos del modelo estén correctamente configurados y que el archivo del mundo (map.world.xml) haga referencia al nuevo modelo. Finalmente:
-
+Sino se ha modificado 'set_gazebo_path.py'
+<pre><code>gazebo map.world.xml</code></pre>
+o si, si se ha modificado
+<pre><code>./launch.sh</code></pre>
 
