@@ -33,7 +33,7 @@ El controlador usa una logica muy simple, hace avanzar al robot hasta encontrar 
 Como se ha mencionado anteriormente el controlado anterior no resuelve todos los mapas, por lo que se modifica el tiempo de giro para que este sea aletorio y por tanto el robot pueda girar de 0 a 360 grados de forma aletoria. Este controlador no es nada óptimo, pero para un tiempo infinito puede resolver todos los mapas que existan. 
 La modificacion se realiza en la linea 35 y es la siguiente:
 <pre><code>rotationDuration = static_cast<double>(rand()) / RAND_MAX * 9.0;</code></pre>
-Video del funcionamiento del controlador en modo aleatorio (Advertencia: Este video puede causar ansiedad a los amantes de la eficiencia.)
+Video del funcionamiento del controlador en modo aleatorio (Este video puede causar ansiedad a los amantes de la eficiencia)
 [Enlace](https://youtu.be/HKttFVv7WkM)
 ## Lanzar el programa <a name="i4"></a>
 Antes de todo en `EntregaGazebo/Controlador/build` ejecutar:
