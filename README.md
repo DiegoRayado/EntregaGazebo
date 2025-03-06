@@ -29,7 +29,12 @@ Video del funcionamiento del controlador
 [Enlace](https://youtu.be/X8nPELdxMe0)
 ### Descripcion
 El controlador usa una logica muy simple, hace avanzar al robot hasta encontrar una pared. Cundo se topa con una pared realiza un giro de 90 grados y sigue avanzando (sino se topa con ninguna pared de nuevo). Finalmente se añade la detencion del robot cuando llega a meta. Como podemos observar es un controlador muy simple que no podria resolver ciertos mapas. Sin embargo, esto podría corregirse añadiendo un componente de aleatoriedad a los grados que gira y la direccion del giro. 
-
+### Version Random
+Como se ha mencionado anteriormente el controlado anterior no resuelve todos los mapas, por lo que se modifica el tiempo de giro para que este sea aletorio y por tanto el robot pueda girar de 0 a 360 grados de forma aletoria. Este controlador no es nada óptimo pero un tiempo infinito puede resolver todos los mapas que existan. 
+La modificacion se realiza en la linea 35
+<pre><code>rotationDuration = static_cast<double>(rand()) / RAND_MAX * 9.0;</code></pre>
+Video del funcionamiento del controlador en modo aleatorio
+[Enlace](https://youtu.be/HKttFVv7WkM)
 ## Lanzar el programa <a name="i4"></a>
 Antes de todo en `EntregaGazebo/Controlador/build` ejecutar:
 <pre><code>cmake ..
