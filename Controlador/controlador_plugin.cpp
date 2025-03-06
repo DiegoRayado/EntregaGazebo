@@ -32,7 +32,7 @@ namespace gazebo
 
             isRotating = false;
             rotationStartTime = 0;
-            rotationDuration = 2.0;
+            rotationDuration = 2.43;
         }
 
         void OnUpdate()
