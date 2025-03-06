@@ -23,7 +23,7 @@ Se añade un sensor, utilizando el codigo propocionado, pero se cambia el angulo
 
 ![Captura](images/gps_add.png)
 
-## Controlador <a name=Controlador"></a>
+## Controlador <a name="Controlador"></a>
 ### Video
 [Enlace](https://youtu.be/G5IKbE7ssrU)
 ### Descripcion
